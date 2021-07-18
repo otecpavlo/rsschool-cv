@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+}
+body{
+  width: 100%;
+
+  background: linear-gradient(to bottom,
+   #D5D7D6 75%,
+   #E8C722 25%) repeat-x scroll #E8C722;
+}
+.education{
+  margin-right: 7px;
+}
+.code{
+  background-color: #D8D8D8;
+}
+main{
+  display: flex;
+  margin: 45px auto 10px;
+  box-shadow: 0px 0px 15px 4px black;
+  width: fit-content;
+  background-color: #FFF;
+}
+.left{
+  width: fit-content;
+}
+.name{
+  text-transform: uppercase;
+  font-family: monospace;
+  letter-spacing: 15px;
+  font-size: 25px;
+  padding: 50px 0px 15px 10px;
+  background-color: #E8C722;
+  color: #3D3C41; 
+}
+.mobile-img{
+  display: none;
+}
+.surname{
+  font-weight: 100;
+}
+ul{
+  list-style-type: none;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 20px;
+}
+h3{
+  font-size: 20px;
+  font-weight: 800;
+  color: #3D3C41;
+  text-transform: uppercase;
+  font-family: system-ui;
+  letter-spacing: 8px;
+  margin: 10px 10px 10px 0;
+  background-color: #F3F3F3;
+}
+h3::before{
+  content: '';
+  border-color: #E8C722;
+  border-style: solid;
+  border-width: 0 9px 0 0;
+  margin-right: 20px;
+}
+.loading__box{
+  height: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  border: 2px solid #858585;
+}
+.loading__JS::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: red;
+}
+.loading__GIT::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: red;
+}
+.loading__CSS::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: red;
+}
+.loading__box:hover::before{
+  box-shadow: 0px 0px 8px 2px red;
+}
+h2{
+  visibility: hidden;
+  position: absolute;
+}
+.skill{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+img{
+  vertical-align: middle;
+}
+p, a{
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+  margin-bottom: 7px;
+}
+@media (max-width: 858px){
+
+main{
+  flex-direction: column-reverse;    
+  margin-top: 0;
+}
+.mobile-img{
+  display: block;
+  text-align: center;
+}
+.photo{
+  display: none;
+}
+}
+
+
